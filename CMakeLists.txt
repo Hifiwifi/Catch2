@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.14)
 
 # detect if Catch is being bundled,
 # disable testsuite in that case
@@ -120,6 +120,7 @@ if (NOT_SUBPROJECT)
       "${CMAKE_CURRENT_BINARY_DIR}/Catch2ConfigVersion.cmake"
       COMPATIBILITY
         SameMajorVersion
+      ARCH_INDEPENDENT
     )
 
     install(
